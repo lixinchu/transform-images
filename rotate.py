@@ -19,5 +19,5 @@ for images in os.listdir(folder_dir):
     output = img.rotate(rotate, expand=True)
 
     # save transformed image with unique name
-    output.save("output_%_.png" % count)
+    output.save("rotate_%_.png" % count)
     count +=1
