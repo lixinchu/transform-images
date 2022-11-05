@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 
 from os import listdir, truncate
 
-# change: path/directory of images
-folder_dir = "C:/Users/Lixin/Desktop/"
+# path/directory of images
+folder_dir = "C:\Users\Lixin\Desktop\PhotoMedicine Labs\Projects\Automatic-Registration-Tool\blurred_images"
 
 count = 0
 sigma = 3.0
@@ -27,5 +27,5 @@ for images in os.listdir(folder_dir):
     plt.imshow(blurred)
 
     # save blurred image
-    skimage.io.imsave("blurred_%_.png" % count)
+    skimage.io.imsave("blurred_%s_%s.png" % (count, images))
     count += 1
